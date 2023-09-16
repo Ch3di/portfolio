@@ -137,20 +137,88 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+    <div class="text-3xl w-full font-bold">Organizations</div>
   </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-  </ul>
-
+  <div class="time-line-container mb-10 grid gap-4">
+    <TimeLineElement
+      title="President"
+      subtitle="Cyber-Trace Club"
+      period="09/2020-09/2021"
+      location="Sousse, Tunisia 🇹🇳"
+    >
+      <div>With a visionary team I managed to:</div>
+      <ul class="list-disc pl-7">
+        <li>Write the club's internal policies</li>
+        <li>
+          Establish committees dedicated to cybersecurity training, marketing,
+          and human resources
+        </li>
+        <li>
+          Create a full training path where we taught the members about the web
+          vulnerabilities (SQLi, XSS, CSRF...), how to exploit them and defend
+          against them
+        </li>
+        <li>
+          Organize an event where we introduced our own CTF (Capture The Flag)
+          competition
+        </li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Member"
+      subtitle="IEEE ISSATSO Student Branch"
+      period="09/2017-11/2018"
+      location="Sousse, Tunisia 🇹🇳"
+    >
+      <ul class="list-disc pl-7">
+        <li>Played twice the IEEEXtreme, a problem solving competition</li>
+      </ul>
+    </TimeLineElement>
+  </div>
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+    <div class="text-3xl w-full font-bold">Professional Certifications</div>
+  </div>
+  <div class="time-line-container mb-10 grid gap-4">
+    <TimeLineElement
+      title="AWS Certified Cloud Practitioner"
+      subtitle="AWS"
+      period="25/03/2023"
+    >
+      <div>
+        Validates the foundational, high-level understanding of AWS Cloud,
+        services, and terminology
+      </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Cloud DevOps Engineer"
+      subtitle="Udacity Nanodegree Program"
+      period="08/03/2023"
+    >
+      <div>
+        Acquired skills in cloud computing, infrastructure automation, CI/CD
+        pipelines, containerization, monitoring, security, scripting, version
+        control, and collaboration tools
+      </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Cyber Security Analyst+ (CySA+)"
+      subtitle="CompTIA"
+      period="21/05/2020"
+    >
+      <div>
+        Leverage intelligence and threat detection techniques, Analyze and
+        interpret data, Identify and address vulnerabilities, Suggest
+        preventative measures, Effectively respond to and recover from incidents
+      </div>
+    </TimeLineElement>
+    <TimeLineElement title="Pentest+" subtitle="CompTIA" period="14/02/2020">
+      <div>
+        Planning and Scoping, Information Gathering and Vulnerability
+        Identification, Attacks and Exploits, Penetration Testing Tools,
+        Reporting and Communication
+      </div>
+    </TimeLineElement>
   </div>
 
   <ul class="list-disc md:columns-5 columns-2 mx-6">
