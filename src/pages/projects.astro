@@ -3,23 +3,117 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
     <div class="text-3xl w-full font-bold mb-5">My Personal Projects</div>
   </div>
-
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Project Deployment"
+    img="/circleci-project-prev.png"
+    desc="Developed a Circle CI pipeline to automate the deployment and testing processes for a full-stack application"
+    url="https://github.com/Ch3di/cdond-c3-projectstarter/blob/master/.circleci/config.yml"
+    badge="DevOps"
+    tags={["CircleCi", "Cloud", "AWS"]}
+    date="23/03/2023"
+  />
+  <HorizontalCard
+    title="Operationalize a ML Microservice API"
+    img="/ml-ms-api-prev.webp"
+    desc="Operationalize a ML Microservice API with a pre-trained sklearn model for housing price prediction, deploying it via Docker and Kubernetes, and integrating with CircleCI"
+    url="https://github.com/Ch3di/cloud-devops-nanodegree-ml-microservice-kubernetes-project"
+    badge="DevOps"
+    tags={["CircleCi", "Cloud", "AWS", "Docker", "Kubernetes", "Cloud9"]}
+    date="22/02/2023"
+  />
+  <HorizontalCard
+    title="Udagram Infrastructure"
+    img="/udagram-infrastructure-prev.jpeg"
+    desc="Designed and wrote CloudFormation Infrastructure to deploy Udagram, an instagram like app"
+    url="https://github.com/Ch3di/udagram-infrastructure"
+    badge="DevOps"
+    tags={["Cloud", "CloudFormation", "AWS"]}
+    date="07/01/2023"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Magic Memory"
+    img="/card-game-prev.png"
+    desc="Card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards"
+    url="https://github.com/Ch3di/magic-game"
+    badge="Frontend"
+    tags={["React"]}
+    date="06/02/2022"
+  />
+  <HorizontalCard
+    title="Connect Me"
+    img="/connect-me-prev.jpeg"
+    desc="Chat app built using React Native and Firebase"
+    url="https://github.com/Ch3di/connect-me"
+    badge="Frontend"
+    tags={["React Native", "Expo", "Firebase"]}
+    date="16/12/2021"
+  />
+  <HorizontalCard
+    title="Travel Advisor Project"
+    img="/travel-advisor-prev.png"
+    desc="As its name states, this project helps the travelers to find good attractions to visit, restaurants to have a delicious meal or hotel to stay the night"
+    url="https://github.com/Ch3di/Travel-Advisor"
+    badge="Frontend"
+    tags={["React"]}
+    date="19/08/2021"
+  />
+  <HorizontalCard
+    title="Dojo Blog"
+    img="/dojo-blog-prev.png"
+    desc="Simple blog app where the user can create and delete blogs. This app is the result of a React tutorial made by The Net Ninja."
+    url="https://github.com/Ch3di/Dojo-Blog"
+    badge="Frontend"
+    tags={["React"]}
+    date="29/07/2021"
+  />
+  <HorizontalCard
+    title="Chirrup"
+    img="/chirrup-prev.png"
+    desc="Social media application that allows users to publish posts, react to each others posts by liking or commenting"
+    url="https://github.com/Ch3di/Chirrup"
+    badge="Full Stack"
+    tags={["React", "GraphQL"]}
+    date="28/07/2021"
+  />
+  <HorizontalCard
+    title="Movienetec"
+    img="/movienetec-prev.jpeg"
+    desc="A Node.js movie rental application featuring user authentication"
+    url="https://github.com/Ch3di/movienetic"
+    badge="Backend"
+    tags={["node.js"]}
+    date="22/03/2021"
+  />
+  <HorizontalCard
+    title="Done With It"
+    img="/done-with-it-prev.jpeg"
+    desc="A streamlined marketplace app for buying and selling of pre-owned items with an intuitive interface"
+    url="https://github.com/Ch3di/Done-with-it"
+    badge="Frontend"
+    tags={["React Native", "Expo"]}
+    date="21/01/2021"
+  />
+  <HorizontalCard
+    title="Organic Shop"
+    img="/oshop-prev.png"
+    desc="An organic food selling project built on the Angular framework"
+    url="https://github.com/Ch3di/oshop"
+    badge="Frontend"
+    tags={["Angular", "Firebase"]}
+    date="31/03/2020"
+  />
+  <HorizontalCard
+    title="Cats adoption management system"
+    img="/cat-adoption-system-prev.png"
+    desc="RESTful API written using Flask python framework. It helps to manage cat adoption. Every user can post cats for adoption. Every user can adopt other user's cats"
+    url="https://github.com/Ch3di/Cat-adoption-system-manager"
+    badge="Backend"
+    tags={["Python", "Flask"]}
+    date="27/11/2018"
   />
 </BaseLayout>
