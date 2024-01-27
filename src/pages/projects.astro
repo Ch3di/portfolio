@@ -7,7 +7,6 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   <div>
     <div class="text-3xl w-full font-bold mb-5">My Personal Projects</div>
   </div>
-  <!-- TODO: Add dates -->
   <HorizontalCard
     title="Project Deployment"
     img="/circleci-project-prev.png"
@@ -33,9 +32,18 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     url="https://github.com/Ch3di/udagram-infrastructure"
     badge="DevOps"
     tags={["Cloud", "CloudFormation", "AWS"]}
-    date="07-01-2023"
+    date="07/01/2023"
   />
   <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Magic Memory"
+    img="/card-game-prev.png"
+    desc="Card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The object of the game is to turn over pairs of matching cards"
+    url="https://github.com/Ch3di/magic-game"
+    badge="Frontend"
+    tags={["React"]}
+    date="06/02/2022"
+  />
   <HorizontalCard
     title="Connect Me"
     img="/connect-me-prev.jpeg"
@@ -53,6 +61,15 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     badge="Frontend"
     tags={["React"]}
     date="19/08/2021"
+  />
+  <HorizontalCard
+    title="Dojo Blog"
+    img="/dojo-blog-prev.png"
+    desc="Simple blog app where the user can create and delete blogs. This app is the result of a React tutorial made by The Net Ninja."
+    url="https://github.com/Ch3di/Dojo-Blog"
+    badge="Frontend"
+    tags={["React"]}
+    date="29/07/2021"
   />
   <HorizontalCard
     title="Chirrup"
