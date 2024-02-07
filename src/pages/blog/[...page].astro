@@ -34,6 +34,11 @@ const { page } = Astro.props;
               url={"/blog/" + post.slug}
               target="_self"
               badge={post.data.badge}
+              date={post.data.pubDate.toLocaleString("en-GB", {
+                year: "numeric",
+                month: "2-digit",
+                day: "numeric"
+              })}
             />
             <div class="divider my-0" />
           </>
