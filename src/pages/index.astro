@@ -3,8 +3,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 const last_posts = posts.slice(0, 3);
 ---
 
@@ -12,10 +13,27 @@ const last_posts = posts.slice(0, 3);
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
     <div class="text-5xl font-bold">I'm Chady Wadii Bouhlel</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer</div>
+    <div class="text-3xl py-3 font-bold">
+      Application Security Software Developer
+    </div>
     <div class="py-2">
-      <text class="text-base">
-        ....Welcome to my portfolio/space...... 
+      <text class="text-base text-justify"
+        >Currently working at imc learning AG in Germany, though my roots trace
+        back to the digital plains of Tunisia. Armed with a degree in software
+        engineering from a Tunisian University and a cybersec badge from an
+        American college, I've journeyed through the binary wilderness to
+        fortify digital fortresses against the forces of chaos. Over the course
+        of my life and career I have developed expertise in several areas of web
+        and mobile development, application security and devsecops. With all
+        that said, I don't like to just define myself by the work I've done. My
+        inspiration is boundless, it fuels me in the pursuit of cultivating new
+        skills. In my downtime, you might find me exploring the pixelated realms
+        of retro games, unraveling the intricate plots of anime series, sweating
+        it out at the gym, or getting lost in the pages of a captivating book.
+        Feel free to review my latest work in my Portfolio and delve deeper into
+        my biography, experience, skills, education, and much more in my <a
+          href="cv">resume</a
+        >.
       </text>
     </div>
   </div>
@@ -25,23 +43,39 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Project Deployment"
+    img="/circleci-project-prev.png"
+    desc="Developed a Circle CI pipeline to automate the deployment and testing processes for a full-stack application"
+    url="https://github.com/Ch3di/cdond-c3-projectstarter/blob/master/.circleci/config.yml"
+    badge="DevOps"
+    tags={["CircleCi", "Cloud", "AWS"]}
+    date="23/03/2023"
   />
-  <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Operationalize a ML Microservice API"
+    img="/ml-ms-api-prev.webp"
+    desc="Operationalize a ML Microservice API with a pre-trained sklearn model for housing price prediction, deploying it via Docker and Kubernetes, and integrating with CircleCI"
+    url="https://github.com/Ch3di/cloud-devops-nanodegree-ml-microservice-kubernetes-project"
+    badge="DevOps"
+    tags={["CircleCi", "Cloud", "AWS", "Docker", "Kubernetes", "Cloud9"]}
+    date="22/02/2023"
   />
+  <HorizontalCard
+    title="Udagram Infrastructure"
+    img="/udagram-infrastructure-prev.jpeg"
+    desc="Designed and wrote CloudFormation Infrastructure to deploy Udagram, an instagram like app"
+    url="https://github.com/Ch3di/udagram-infrastructure"
+    badge="DevOps"
+    tags={["Cloud", "CloudFormation", "AWS"]}
+    date="07/01/2023"
+  />
+
   <div class="divider my-0"></div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Check My Latest Blog Posts</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">
+      Check My Latest Blog Posts
+    </div>
   </div>
 
   {
