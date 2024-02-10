@@ -1,55 +1,18 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import TimeLineElement from "../components/cv/TimeLine.astro";
+import TimeLineElement from "../components/resume/TimeLine.astro";
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <!-- TODO: Rename it to resume -->
+<BaseLayout title="Resume" sideBarActiveItemID="resume">
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
 
   <div class="mb-10 text-justify">
-    Certified penetration tester and cyber security analyst, experiencedskills
-    in leadership and management.
-  </div>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
-
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Higher Institute of Applied Sciences and Technology of Sousse"
-      subtitle="National Diploma in Software Engineering"
-      period="2016-2022"
-      location="Sousse, Tunisia 🇹🇳"
-    >
-      <ul class="list-disc pl-7">
-        <li>
-          Took up classes in programming, operating systems, networking,
-          computer architecture, cryptography, network security...
-        </li>
-        <li>Took up specialization courses in software engineering.</li>
-      </ul>
-    </TimeLineElement>
-    <TimeLineElement
-      title="Spokane Falls Community College"
-      subtitle="Network Security Certificate Program"
-      period="2018-2019"
-      location="Washington, USA 🇺🇸"
-    >
-      <ul class="list-disc pl-7">
-        <li>
-          Selected to be an exchange student in a very competitive program
-          funded by the U.S. government
-        </li>
-        <li>
-          Took classes in network security and digital forensics (GPA: 4.0 - Top
-          of the program)
-        </li>
-      </ul>
-    </TimeLineElement>
+    Dynamic and versatile professional with expertise in penetration testing,
+    web/mobile development, cyber security and DevSecOps. Passionate about
+    navigating the intricate landscapes of technology while fostering innovative
+    solutions and leading teams towards excellence.
   </div>
 
   <div class="mb-5">
@@ -142,8 +105,46 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Organizations</div>
-    <!-- TODO: Change it to leadership positions and organizations or clubs -->
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Higher Institute of Applied Sciences and Technology of Sousse"
+      subtitle="National Diploma in Software Engineering"
+      period="2016-2022"
+      location="Sousse, Tunisia 🇹🇳"
+    >
+      <ul class="list-disc pl-7">
+        <li>
+          Took up classes in programming, operating systems, networking,
+          computer architecture, cryptography, network security...
+        </li>
+        <li>Took up specialization courses in software engineering.</li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Spokane Falls Community College"
+      subtitle="Network Security Certificate Program"
+      period="2018-2019"
+      location="Washington, USA 🇺🇸"
+    >
+      <ul class="list-disc pl-7">
+        <li>
+          Selected to be an exchange student in a very competitive program
+          funded by the U.S. government
+        </li>
+        <li>
+          Took classes in network security and digital forensics (GPA: 4.0 - Top
+          of the program)
+        </li>
+      </ul>
+    </TimeLineElement>
+  </div>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">
+      Leadership Positions & Organizations
+    </div>
   </div>
 
   <div class="time-line-container mb-10 grid gap-4">
@@ -247,7 +248,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       <li>Pentesting</li>
       <li>Vulnerability Management</li>
       <li>OWASP TOP 10</li>
-      <li>Repoting and Documentation</li>
+      <li>Reporting and Documentation</li>
     </ul>
   </div>
   <div class="mb-5">
