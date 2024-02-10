@@ -2,7 +2,7 @@
 
 ![Astrofy | Personal Porfolio Website Template](public/social_img.png)
 
-Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed.
+Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, Resume, Project Section, Store and RSS Feed.
 
 ## Demo
 
@@ -33,7 +33,7 @@ npm run dev
 ```php
 ├── src/
 │   ├── components/
-│   │   ├── cv/
+│   │   ├── resume/
 │   │   │   ├── TimeLine
 │   │   ├── BaseHead.astro
 │   │   ├── Card.astro
@@ -58,7 +58,7 @@ npm run dev
 │   │   ├── blog/
 │   │   │   ├── [...page].astro
 │   │   │   ├── [slug].astro
-│   │   └── cv.astro
+│   │   └── resume.astro
 │   │   └── index.astro
 │   │   └── projects.astro
 │   │   └── rss.xml.js
@@ -100,7 +100,7 @@ To add a new page in the sidebar go to `SideBarMenu` component.
 
 #### TimeLine
 
-The timeline components are used to conform the CV.
+The timeline components are used to conform the Resume.
 
 ```html
 <div class="time-line-container">
