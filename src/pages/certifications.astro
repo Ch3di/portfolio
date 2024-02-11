@@ -1,0 +1,62 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+const certificates = [
+  {
+    title: "AWS Certified Cloud Practitioner",
+    organization: "AWS",
+    description:
+      "Validates the foundational, high-level understanding of AWS Cloud, services, and terminology",
+    image: "certificates/aws-certified-cloud-practitioner.png",
+    date: "25/03/2023",
+    url: "https://drive.google.com/file/d/1k8YFstXnE1W_8a7j7iAvgpMkUko7uNS_/view"
+  },
+  {
+    title: "Cloud DevOps Engineer Nanodegree",
+    organization: "Udacity",
+    description:
+      "Acquired skills in cloud computing, infrastructure automation, CI/CD pipelines, containerization, monitoring, security, scripting, version control, and collaboration tools",
+    image: "certificates/udacity-nanodegree-cloud-devops-engineer.png",
+    date: "08/03/2023",
+    url: "https://drive.google.com/file/d/166QFllgWW9jvH9anmNyk0Q0dMscKIIyC/view"
+  },
+  {
+    title: "Cyber Security Analyst+ (CySA+)",
+    organization: "CompTIA",
+    description:
+      "Leverage intelligence and threat detection techniques, Analyze and interpret data, Identify and address vulnerabilities, Suggest preventative measures, Effectively respond to and recover from incidents",
+    image: "certificates/cysa-plus-certificate.png",
+    date: "21/05/2020",
+    url: "https://drive.google.com/file/d/1TdCwFD8zYLqz57RAhCTqXphwvYICxAvb/view"
+  },
+  {
+    title: "Pentest+",
+    organization: "CompTIA",
+    description:
+      "Planning and Scoping, Information Gathering and Vulnerability Identification, Attacks and Exploits, Penetration Testing Tools, Reporting and Communication",
+    image: "certificates/pentest-plus-crtificate.png",
+    date: "14/02/2020",
+    url: "https://drive.google.com/file/d/1J3btMyp1bwM_R0yy5niE5bN7nfUST-8V/view"
+  }
+];
+---
+
+<BaseLayout title="Certifications" sideBarActiveItemID="certifications">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">
+      Professional Certifications
+    </div>
+  </div>
+  {
+    certificates.map((certificate) => (
+      <HorizontalCard
+        title={certificate.title}
+        img={certificate.image}
+        desc={certificate.description}
+        url={certificate.url}
+        badge={certificate.organization}
+        date={certificate.date}
+      />
+    ))
+  }
+</BaseLayout>

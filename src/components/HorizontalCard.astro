@@ -23,9 +23,8 @@ import { Image } from "@astrojs/image/components";
             src={img}
             aspectRatio="16:9"
             width={750}
-            format="webp"
             alt={title}
-            class="max-w-full md:max-w-[13rem] rounded-lg"
+            class="max-w-full max-h-fit bg-cover md:max-w-[13rem] rounded-lg"
           />
         )
       }
@@ -33,7 +32,7 @@ import { Image } from "@astrojs/image/components";
         <h1 class="text-xl font-bold flex-1">
           {title}
           {badge && <div class="badge badge-secondary mx-2 mb-3">{badge}</div>}
-          <span class="text-sm mx-2 italic float-right">{date}</span>
+          <span class="text-sm mx-1 mt-1 italic float-right">{date}</span>
         </h1>
         <p class="py-1 text-1xl">{desc}</p>
         <div class="card-actions justify-end">
