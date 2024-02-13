@@ -1,8 +1,8 @@
 ---
 title: "Secret - Hack The Box Writeup"
-description: "Write up on how to solve the Secret box from the Hack The Box platform"
+description: "Practical, Step-by-Step Guide to Unlocking the Secret Box Challenge on the Hack The Box Platform"
 pubDate: "Mar 29 2022"
-heroImage: "/htb-secret-article-prev.png"
+heroImage: "/articles/htb-secret-article-prev.png"
 badge: "Hack The Box"
 ---
 
