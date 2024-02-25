@@ -1,6 +1,6 @@
 # Astrofy | Personal Porfolio Website Template
 
-![Astrofy | Personal Porfolio Website Template](public/social_img.png)
+![Astrofy | Personal Porfolio Website Template](public/social_img.jpg)
 
 Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, Resume, Project Section, Store and RSS Feed.
 
@@ -66,7 +66,7 @@ npm run dev
 │       └── global.css
 ├── public/
 │   ├── favicon.svg
-│   └── social-image.png
+│   └── social-image.jpg
 │   └── sprofile.jpg
 │   └── social_img.webp
 ├── astro.config.mjs

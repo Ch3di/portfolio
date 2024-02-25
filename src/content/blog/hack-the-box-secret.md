@@ -2,7 +2,7 @@
 title: "Secret - Hack The Box Writeup"
 description: "Practical, Step-by-Step Guide to Unlocking the Secret Box Challenge on the Hack The Box Platform"
 pubDate: "Mar 29 2022"
-heroImage: "/articles/htb-secret-article-prev.png"
+heroImage: "/articles/htb-secret-article-prev.jpg"
 badge: "Hack The Box"
 ---
 
@@ -23,7 +23,7 @@ I started by running quick nmap scan
 nmap -sV -sC -p- 10.10.11.120
 ```
 
-![nmap-scan](/htb-secret-article-images/nmap-scan.png)
+![nmap-scan](/htb-secret-article-images/nmap-scan.jpg)
 
 From the nmap scan result, we can see that there are 3 active servers which are:
 
@@ -33,7 +33,7 @@ From the nmap scan result, we can see that there are 3 active servers which are:
 
 The obvious next step is to consult the web server on the browser. I kicked my favorite browser and wrote the box IP on the address bar.
 
-![website-preview](/htb-secret-article-images/website-preview.png)
+![website-preview](/htb-secret-article-images/website-preview.jpg)
 
 But before starting diving in the DumbDOCS website and going through its pages, I kicked off Gobuster to enumerate the directories
 
@@ -41,7 +41,7 @@ But before starting diving in the DumbDOCS website and going through its pages, 
 gobuster dir -u 10.10.11.120 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 20
 ```
 
-![gobuster-scan](/htb-secret-article-images/gobuster-scan.png)
+![gobuster-scan](/htb-secret-article-images/gobuster-scan.jpg)
 
 My next step was to visit this endpoints and explore the website.
 
@@ -123,7 +123,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNmMDAyYmM3MmYyZDA0MjliOWJkZGE
 
 My next step was to decode the token and see its claims hoping that I found something useful. Therefore, I navigated to [jwt.io](https://jwt.io) and paste the token in the "Encoded" text field.
 
-![jwt-decode](/htb-secret-article-images/jwt-decode.png)
+![jwt-decode](/htb-secret-article-images/jwt-decode.jpg)
 
 As we see in the image above, there is no extra claim that we don't know and the signature is invalid because we don't know the secret. So may be we can find that in the source code we downloaded earlier.
 
@@ -178,7 +178,7 @@ Let's check the git log by executing the following command:
 git log
 ```
 
-![git-log.png](/htb-secret-article-images/git-log.png)
+![git-log.jpg](/htb-secret-article-images/git-log.jpg)
 
 The commit saying "removed `.env` for security reasons" is interesting.
 
@@ -190,7 +190,7 @@ git diff HEAD~2
 
 Bingo we found the secret. Let's move to the exploitation phase
 
-![token-secret](/htb-secret-article-images/token-secret.png)
+![token-secret](/htb-secret-article-images/token-secret.jpg)
 
 ```
 TOKEN_SECRET = gXr67TtoQL8TShUc8XYsK2HvsBYfyQSFCFZe4MQp7gRpFuMkKjcM72CNQN4fMfbZEKx4i7YiWuNAkmuTcdEriCMm9vPAYkhpwPTiuVwVhvwE
